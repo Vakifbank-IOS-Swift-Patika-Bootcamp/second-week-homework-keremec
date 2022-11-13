@@ -157,6 +157,11 @@ class Zoo:Company{
             self.budget -= i.salary
         }
     }
+    
+    func editWater(water:Int){
+        self.water += water
+    }
+    
     func useWater(){
         for i in animalSitters{
             self.water -= i.waterConsumption
@@ -249,6 +254,10 @@ zoo1.addAnimalSitter(person:as1)
 var cat1 = Cat()
 var cat2 = Cat()
 var dog1 = Dog()
+
+zoo1.editWater(water: -25)
+
+zoo1.water
 
 
 as1.addAnimal(animal: cat1)
